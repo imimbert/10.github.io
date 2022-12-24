@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>十道题挑战自制版</title>
+	<link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <style>
+        body .container {
+            background-color: black;
+            box-sizing: border-box;
+            height: 500vw;
+            padding: 0 2vw;
+        }
+    </style>
+	<div class="container">
+        <div class="main">
+            <ul class="header">
+                <ul class="nav">
+                    <li>
+                        <a href="#">回到顶部</a>
+                    </li>
+                </ul>
+            </ul>
+            <div class="shop" id="talk" >
+                <h1 style="color:white;">十道题挑战自制版 10 Questions</h1><br>
+                <h2 style="color:white;">作者: YR</h2>
+                <h2 style="color:white;">最近也是发现朋友圈里莫名其妙多了很多十道题挑战， js/html/css 也可以复刻，所以自制了一个。</h2>
+                <h2 style="color:white;">( 注: 邮箱和姓名能让我知道你是谁，个人信息绝对保密，后端都有数据的。</h2>
+            </div>
+
+            <div style="background-color:white;background-size: 10px auto;border-radius: 20px;padding-top:25px;padding-bottom:25px;padding-right:50px;padding-left:50px;">
+                <h3>你的昵称 &nbsp; &nbsp; <input type="text" name="q0" style="outline-style: none;border: 0px;border: 1px solid #ccc;border-radius: 3px;">
+                <h3>你的邮箱(没有可填2080035494@qq.com)  &nbsp; &nbsp;<input name="email" type="text" style="outline-style: none;border: 0px;border: 1px solid #ccc;border-radius: 3px;">
+                <form>
+                    <br>
+                    1. 银行卡里的钱，我会？<br>
+                    <label><input type="radio" name="q1" value="A">A. 存着</label><br>
+		            <label><input type="radio" name="q1" value="B">B. 花掉</label><br>
+                    <!-- A -->
+                    <br>2.我哪科最好？<br>
+                    <label><input type="radio" name="q2" value="A">A. 语文</label><br>
+		            <label><input type="radio" name="q2" value="B">B. 数学</label><br>
+                    <label><input type="radio" name="q2" value="C">C. 英语</label><br>
+		            <label><input type="radio" name="q2" value="D">D. 历史</label><br>
+                    <!-- B -->
+                    <br>3.我最喜欢用什么品牌的电子设备？<br>
+                    <label><input type="radio" name="q3" value="A">A. Android</label><br>
+		            <label><input type="radio" name="q3" value="B">B. IOS</label><br>
+                    <!-- B -->
+                    <br>4.我最喜欢什么电脑操作系统？<br>
+                    <label><input type="radio" name="q4" value="A">A. Kali</label><br>
+		            <label><input type="radio" name="q4" value="B">B. Linux</label><br>
+                    <label><input type="radio" name="q4" value="C">C. IOS</label><br>
+		            <label><input type="radio" name="q4" value="D">D. Windows</label><br>
+                    <!-- D -->
+                    <br>5.我在班里的第一个朋友的姓的首字母？<br>
+                    <label><input type="radio" name="q5" value="A">A. L</label><br>
+		            <label><input type="radio" name="q5" value="B">B. W</label><br>
+                    <label><input type="radio" name="q5" value="C">C. Q</label><br>
+                    <!-- C -->
+                    <br>6.我到校早吗？<br>
+                    <label><input type="radio" name="q6" value="A">A. 6:35之前</label><br>
+		            <label><input type="radio" name="q6" value="B">B. 6:35~6:45</label><br>
+                    <label><input type="radio" name="q6" value="C">C. 6:45~7:05</label><br>
+		            <label><input type="radio" name="q6" value="D">D. 7:05之后</label><br>
+                    <!-- B -->
+                    <br>7.我中文打字速度最快到多少？<br>
+                    <label><input type="radio" name="q7" value="A">A. 30</label><br>
+		            <label><input type="radio" name="q7" value="B">B. 50</label><br>
+                    <label><input type="radio" name="q7" value="C">C. 80</label><br>
+		            <label><input type="radio" name="q7" value="D">D. 120</label><br>
+                    <!-- C -->
+                    <br>8.我家楼层？<br>
+                    <label><input type="radio" name="q8" value="A">A. 1~5</label><br>
+		            <label><input type="radio" name="q8" value="B">B. 6~10</label><br>
+                    <label><input type="radio" name="q8" value="C">C. 11~20</label><br>
+		            <label><input type="radio" name="q8" value="D">D. 20~30</label><br>
+                    <!-- D -->
+                    <br>9.我这学期去扫过几次卷子？<br>
+                    <label><input type="radio" name="q9" value="A">A. 1</label><br>
+		            <label><input type="radio" name="q9" value="B">B. 2</label><br>
+                    <label><input type="radio" name="q9" value="C">C. 3</label><br>
+		            <label><input type="radio" name="q9" value="D">D. 4</label><br>
+                    <!-- C -->
+                    <br>10.js操作文件的模块是？[送分题(选A)]<br>
+                    <label><input type="radio" name="q10" value="A">A. fs</label><br>
+		            <label><input type="radio" name="q10" value="B">B. cv2</label><br>
+                    <label><input type="radio" name="q10" value="C">C. random</label><br>
+		            <label><input type="radio" name="q10" value="D">D. email</label><br>
+                    <!-- A -->
+                    <br><button onclick="ok()">提交</button>
+                    <!-- [A,B,B,D,C,B,C,D,C,A] -->
+                    <style>
+                        #box {
+                            width: 300px;
+                            height: 300px;
+                           /* border: 1px solid red;*/
+                            position: absolute;
+                            left: calc(50% - 150px);
+                           /* transform: translate(-50%,0);*/
+                           top: calc(0);
+                           filter: drop-shadow(0 0 30px  rgb(255,30,30));
+                           animation-name: heart;
+                           animation-duration: 0.75s;
+                           animation-delay: 0s;
+                           animation-timing-function: ease-in-out;
+                           animation-iteration-count: infinite;
+                        }
+                        #left,#right{
+                            width: 150px;
+                            height: 240px;
+                            background-color:red;
+                            border-radius: 75px 75px 0 0;
+                            position: absolute;
+                        }
+                        #left{
+                            transform-origin: 0 100%;
+                            transform: rotate(-45deg);
+                            left: 150px;
+                        }
+                        #right{
+                            transform-origin: 100% 100%;
+                            transform: rotate(45deg);
+                        }
+                        @keyframes heart{
+                            0%{
+                                transform: scale(0.8,0.8);
+                                opacity: 1;
+                            }
+                            75%{
+                                transform: scale(1,1);
+                                opacity: 0.8;
+                            }
+                            100%{
+                                transform: scale(.8,.8);
+                                opacity: 1;
+                            }
+                        }
+                    </style>
+                    <script>
+                        // window.onload = {
+                        var na = document.getElementsByName("q0");
+                        var html = "<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                        html = html + "你" + "</h1>";
+                        document.write(html);
+                        // }
+                    </script>
+                    
+                    <div id="box">
+                        <div id="left"></div>
+                        <div id="right"></div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+
+  </body>
+</html>

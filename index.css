@@ -1,0 +1,606 @@
+body {
+    background: black;
+}
+.text{
+    color: white;
+}
+label.bui-radios-label input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    }
+    label.bui-radios-label .bui-radios {
+    display: inline-block;
+    position: relative;
+    
+    width: 13px;
+    
+    height: 13px;
+    
+    background: #FFFFFF;
+    
+    border: 1px solid #979797;
+    
+    border-radius: 50%;
+    
+    vertical-align: -2px;
+    
+    }
+    
+    label.bui-radios-label input:checked + .bui-radios:after {
+    
+    position: absolute;
+    
+    content: "";
+    
+    width: 7px;
+    
+    height: 7px;
+    
+    background-color: #fff;
+    
+    border-radius: 50%;
+    
+    top: 3px;
+    
+    left: 3px;
+    
+    }
+    
+    label.bui-radios-label input:checked + .bui-radios {
+    
+    background: #00B066;
+    
+    border: 1px solid #00B066;
+    
+    }
+    
+    label.bui-radios-label input:disabled + .bui-radios {
+    
+    background-color: #e8e8e8;
+    
+    border: solid 1px #979797;
+    
+    }
+    
+    label.bui-radios-label input:disabled:checked + .bui-radios:after {
+    
+    background-color: #c1c1c1;
+    
+    }
+    
+    label.bui-radios-label.bui-radios-anim .bui-radios {
+    
+    -webkit-transition: background-color ease-out .3s;
+    
+    transition: background-color ease-out .3s;
+    
+    }
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/* 
+@font-face {
+    font-family: mono;
+    src: url(JetBrainsMono-Medium.ttf);
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::placeholder {
+    color: #009bff66;
+}
+
+a {
+    text-decoration: none;
+}
+
+body .container {
+    background-color: #1e1e22;
+    box-sizing: border-box;
+    height: 500vw;
+    padding: 0 2vw;
+}
+
+body .container .main {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+body .container .main .header {
+    height: 60px;
+    position: relative;
+}
+
+body .container .main .header .nav {
+    height: 60px;
+    display: inline-block;
+}
+
+body .container .main .header .nav li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 1vw;
+    font-family: 'Poppins', serif;
+    font-size: 1vw;
+    list-style: none;
+}
+
+body .container .main .header .nav li a {
+    border-bottom: 1px solid #009bff;
+    color: #ddd;
+    transition: all 0.5s;
+}
+
+body .container .main .header .nav li a:hover {
+    color: #009bff;
+}
+
+body .container .main .header .nav li p {
+    color: #009bff;
+}
+
+body .container .main .header .btn-login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+body .container .main .header .btn-login .nav-1 {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    background-color: #009bff;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+body .container .main .header .btn-login .nav-1:hover {
+    color: #ddd;
+}
+
+body .container .main .header .btn-login .nav-1 ion-icon {
+    height: 40px;
+    padding-right: 10px;
+}
+
+body .container .main .header .btn-login .nav-2 {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+    color: #ddd;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+body .container .main .header .btn-login .nav-2:hover {
+    color: #009bff;
+}
+
+body .container .main .header .btn-login .nav-2 ion-icon {
+    height: 40px;
+    padding-right: 10px;
+}
+
+body .container .main section .title-bar {
+    height: 10vw;
+}
+
+body .container .main section .title-bar .title {
+    border-right: 2px solid #000;
+    margin-top: 4vw;
+    display: inline-block;
+    font-size: 6vw;
+    font-family: 'mono', serif;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: borders 1s infinite normal,
+    widths 4s steps(16);
+}
+
+@keyframes borders {
+    from {
+        border-right-color: #000;
+    }
+
+    to {
+        border-right-color: #ddd;
+    }
+}
+
+@keyframes widths {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 16ch;
+    }
+}
+
+.about {
+    margin-top: 3vw;
+}
+
+.about p {
+    font-size: 1.5vw;
+    font-family: 'Poppins', serif;
+    color: #fff;
+}
+
+.func-1 {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.func-1 .func-1-left {
+    width: 55vw;
+    margin-right: 5vw;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+}
+
+.func-1 .func-1-left #foo-bar {
+    padding: 1vw;
+}
+
+.func-1 .func-1-left p {
+    font-family: "Poppins", serif;
+    font-size: 1.5vw;
+    color: #fff;
+    padding-left: 2vw;
+}
+
+#daily-words {
+    padding-left: 3vw;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 0;
+}
+
+.shop a{
+    color: #009bff;
+    transition: all .5s;
+}
+
+.shop a:hover{
+    color: white;
+}
+
+.shop p {
+    font-family: "Poppins", serif;
+    font-size: 1.5vw;
+    color: #fff;
+    padding-left: 1vw;
+    border-left: 2px solid #009bff;
+}
+
+.shop h2 {
+    color: white;
+    margin-top: .5vw;
+    font-weight: 300;
+    font-family: "Poppins", serif;
+    font-size: 1.5vw;
+}
+
+.shop h1{
+    font-family: 'Poppins', serif;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #fff;
+    transition: all 1s;
+}
+
+.shop h1:hover {
+    color: #009bff;
+}
+:root {
+    --dark-text: #555566;
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #f0f0f0;
+    --light-text: #151426;
+    --light-btn: rgba(0, 155, 255, 0.87);
+    --lighter-btn: rgba(0, 155, 255, 0.47);
+    --blue: #0000ff;
+    --white: #fff;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family: 'Poppins';
+}
+
+.calendar {
+    height: 610px;
+    position: relative;
+    width: max-content;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 30px 50px 0 50px;
+    box-shadow: var(--shadow);
+}
+
+.calendar-header {
+    background: var(--light-btn);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--white);
+    padding: 10px;
+}
+
+.calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    cursor: pointer;
+    color: #686868;
+}
+
+.calendar-week-days div:hover {
+    color: var(--light-btn);
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: var(--light-second);
+    height: 50px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--dark-text);
+}
+
+.calendar-days div {
+    width: 30px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--light-hover);
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: var(--light-btn);
+    transition: all 2s ease-in-out;
+    transform: scale(1.12);
+}
+
+.year-change:hover pre {
+    color: var(--light-body);
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#year:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div.current-date {
+    color: #009bff;
+}
+
+.calendar-days div:hover {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    background-color: var(--lighter-btn);
+    border-radius: 20%;
+    color: var(--dark-text);
+}
+
+.month-list {
+    position: relative;
+    left: 0;
+    top: -50px;
+    background-color: #ffffff;
+    color: var(--light-text);
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    border-radius: 20px;
+}
+
+.month-list > div {
+    display: grid;
+    place-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.month-list > div > div {
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', serif;
+}
+
+.month-list > div > div:hover {
+    background-color: var(--lighter-btn);
+}
+
+.month-list .show {
+    visibility: visible;
+    pointer-events: visible;
+    transition: .6s ease-in-out;
+    animation: to-left .71s forwards;
+}
+
+.month-list.hideonce {
+    visibility: hidden;
+}
+
+.month-list.hide {
+    animation: to-right 1s forwards;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.date-time-formate {
+    width: max-content;
+    height: max-content;
+    font-family: 'Jetbrains Mono', serif;
+    position: relative;
+    display: inline;
+    top: 140px;
+    justify-content: center;
+}
+
+.day-text-formate {
+    font-family: 'Poppins', serif;
+    font-size: 1.4rem;
+    padding-right: 5%;
+    border-right: 3px solid var(--light-btn);
+    position: absolute;
+    left: -1rem;
+}
+
+.date-time-value {
+    display: block;
+    height: max-content;
+    width: max-content;
+    position: relative;
+    left: 30%;
+    top: -18px;
+    text-align: center;
+}
+
+.date-formate {
+    font-size: .8rem;
+}
+
+.time-formate {
+    font-size: 1.5rem;
+}
+
+.time-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+}
+
+.date-text-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+}
+
+.date-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+}
+
+.time-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.date-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.date-text-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes to-left {
+    0% {
+        transform: translateX(230%);
+    }
+
+    100% {
+        transform: translateX(230%);
+        opacity: 1;
+    }
+}
+
+@keyframes to-right {
+    10% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+        opacity: 1;
+    }
+}
+
+@keyframes hidetime {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-370%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .month-list > div {
+        margin: -5px 0;
+    }
+}
